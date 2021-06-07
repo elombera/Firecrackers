@@ -458,119 +458,119 @@ ggsave("Figuras/Lpeak.png", plot=fig.Lpeak, width = 15, height = 10, units = "cm
 
 # Comparacion pareada (Paired comparisons) -----
 # ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 
-#Año nuevo
-idx = tabla.datos$Fecha == "Año Nuevo"
-tabla.datos.AN = tabla.datos[idx,]
-
-t.test(filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="A")$LeqAS,
-       filter(tabla.datos.AN, 
-              Condicion =="CON" & Tiempo =="A")$LeqAS, 
-       paired = FALSE)
-
-t.test(filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="B")$LeqAS,
-       filter(tabla.datos.AN, 
-              Condicion =="CON" & Tiempo =="B")$LeqAS, 
-       paired = FALSE)
-
-t.test(filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="C")$LeqAS,
-       filter(tabla.datos.AN, 
-              Condicion =="CON" & Tiempo =="C")$LeqAS, 
-       paired = FALSE)
-
-t.test(filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="A")$LeqAS,
-       filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="B")$LeqAS, 
-       paired = FALSE)
-
-t.test(filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="A")$LeqAS,
-       filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="C")$LeqAS, 
-       paired = FALSE)
-
-t.test(filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="B")$LeqAS,
-       filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="C")$LeqAS, 
-       paired = FALSE)
-#Navidad
-idx = tabla.datos$Fecha == "Navidad"
-tabla.datos.AN = tabla.datos[idx,]
-
-t.test(filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="A")$LeqAS,
-       filter(tabla.datos.AN, 
-              Condicion =="CON" & Tiempo =="A")$LeqAS, 
-       paired = FALSE)
-
-t.test(filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="B")$LeqAS,
-       filter(tabla.datos.AN, 
-              Condicion =="CON" & Tiempo =="B")$LeqAS, 
-       paired = FALSE)
-
-t.test(filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="C")$LeqAS,
-       filter(tabla.datos.AN, 
-              Condicion =="CON" & Tiempo =="C")$LeqAS, 
-       paired = FALSE)
-
-t.test(filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="A")$LeqAS,
-       filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="B")$LeqAS, 
-       paired = FALSE)
-
-t.test(filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="A")$LeqAS,
-       filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="C")$LeqAS, 
-       paired = FALSE)
-
-t.test(filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="B")$LeqAS,
-       filter(tabla.datos.AN, 
-              Condicion =="SIN" & Tiempo =="C")$LeqAS, 
-       paired = FALSE)
-
-
+# #Año nuevo
+# idx = tabla.datos$Fecha == "Año Nuevo"
+# tabla.datos.AN = tabla.datos[idx,]
+# 
+# t.test(filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="A")$LeqAS,
+#        filter(tabla.datos.AN, 
+#               Condicion =="CON" & Tiempo =="A")$LeqAS, 
+#        paired = FALSE)
+# 
+# t.test(filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="B")$LeqAS,
+#        filter(tabla.datos.AN, 
+#               Condicion =="CON" & Tiempo =="B")$LeqAS, 
+#        paired = FALSE)
+# 
+# t.test(filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="C")$LeqAS,
+#        filter(tabla.datos.AN, 
+#               Condicion =="CON" & Tiempo =="C")$LeqAS, 
+#        paired = FALSE)
+# 
+# t.test(filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="A")$LeqAS,
+#        filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="B")$LeqAS, 
+#        paired = FALSE)
+# 
+# t.test(filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="A")$LeqAS,
+#        filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="C")$LeqAS, 
+#        paired = FALSE)
+# 
+# t.test(filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="B")$LeqAS,
+#        filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="C")$LeqAS, 
+#        paired = FALSE)
+# #Navidad
+# idx = tabla.datos$Fecha == "Navidad"
+# tabla.datos.AN = tabla.datos[idx,]
+# 
+# t.test(filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="A")$LeqAS,
+#        filter(tabla.datos.AN, 
+#               Condicion =="CON" & Tiempo =="A")$LeqAS, 
+#        paired = FALSE)
+# 
+# t.test(filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="B")$LeqAS,
+#        filter(tabla.datos.AN, 
+#               Condicion =="CON" & Tiempo =="B")$LeqAS, 
+#        paired = FALSE)
+# 
+# t.test(filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="C")$LeqAS,
+#        filter(tabla.datos.AN, 
+#               Condicion =="CON" & Tiempo =="C")$LeqAS, 
+#        paired = FALSE)
+# 
+# t.test(filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="A")$LeqAS,
+#        filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="B")$LeqAS, 
+#        paired = FALSE)
+# 
+# t.test(filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="A")$LeqAS,
+#        filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="C")$LeqAS, 
+#        paired = FALSE)
+# 
+# t.test(filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="B")$LeqAS,
+#        filter(tabla.datos.AN, 
+#               Condicion =="SIN" & Tiempo =="C")$LeqAS, 
+#        paired = FALSE)
+# 
+# 
 
 #### VIEJO #####
 #Grafico LeqAS
-cbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#999999", "#D55E00", "#0072B2", "#CC79A7", "#F0E442")
-fig.LeqAS = tabla.datos %>% 
-  # filter(Fecha == "Navidad") %>%
-  ggplot(aes(x = Condicion, 
-             y = LeqAS, 
-             colour = Condicion, 
-             fill = Condicion)) +
-  scale_colour_manual(values = cbPalette) + 
-  scale_fill_manual(values = cbPalette) + 
-  geom_point(alpha = 0.4, 
-             position = position_jitterdodge(jitter.width = .3,
-                                             jitter.height = 0,
-                                             dodge.width = 1 )) +
-  stat_summary(fun.data = "mean_se", 
-               geom = "linerange",  
-               alpha = 0.7,
-               size=2, 
-               position = position_dodge(width = 1)) +
-  stat_summary(fun.data = "mean_se", 
-               geom = "point", 
-               alpha = 1,
-               size = 4,
-               position = position_dodge(width = 1)) +
-  labs(x = "Condicion CON/SIN Pirotecnia", 
-       y = "Leq Slow [dBA]") +
-  ylim(35,90) +
-  facet_grid(Fecha~Tiempo) +
-  theme_pubr(base_size = 12, margin = TRUE)+
-  theme(legend.position = "none")+
-  annotate("text", x = 1.5, y = 85,  label = "***", size = 7) +
-  annotate("segment", x = 1, xend = 2, y = 84, yend = 84, colour = "black", size=.8, alpha=1,)
-fig.LeqAS
-ggsave("Figuras/LeqAS.png", plot=fig.LeqAS, width = 16, height = 16, units = "cm", dpi=600, limitsize=FALSE)  
+# cbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#999999", "#D55E00", "#0072B2", "#CC79A7", "#F0E442")
+# fig.LeqAS = tabla.datos %>% 
+#   # filter(Fecha == "Navidad") %>%
+#   ggplot(aes(x = Condicion, 
+#              y = LeqAS, 
+#              colour = Condicion, 
+#              fill = Condicion)) +
+#   scale_colour_manual(values = cbPalette) + 
+#   scale_fill_manual(values = cbPalette) + 
+#   geom_point(alpha = 0.4, 
+#              position = position_jitterdodge(jitter.width = .3,
+#                                              jitter.height = 0,
+#                                              dodge.width = 1 )) +
+#   stat_summary(fun.data = "mean_se", 
+#                geom = "linerange",  
+#                alpha = 0.7,
+#                size=2, 
+#                position = position_dodge(width = 1)) +
+#   stat_summary(fun.data = "mean_se", 
+#                geom = "point", 
+#                alpha = 1,
+#                size = 4,
+#                position = position_dodge(width = 1)) +
+#   labs(x = "Condicion CON/SIN Pirotecnia", 
+#        y = "Leq Slow [dBA]") +
+#   ylim(35,90) +
+#   facet_grid(Fecha~Tiempo) +
+#   theme_pubr(base_size = 12, margin = TRUE)+
+#   theme(legend.position = "none")+
+#   annotate("text", x = 1.5, y = 85,  label = "***", size = 7) +
+#   annotate("segment", x = 1, xend = 2, y = 84, yend = 84, colour = "black", size=.8, alpha=1,)
+# fig.LeqAS
+# ggsave("Figuras/LeqAS.png", plot=fig.LeqAS, width = 16, height = 16, units = "cm", dpi=600, limitsize=FALSE)  
